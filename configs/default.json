@@ -1,0 +1,16 @@
+{
+    "batch_size": 8,
+    "patch_size": 256,
+    "valid_mode": "valid",
+    "edge_decay": 0.1,
+    "only_h_flip": false,
+    "optimizer": "adam",
+    "lr_dehaze": 1e-4,
+    "lr_depth": 1e-4,
+    "epochs":150,
+    "eval_freq": 1,
+    "dataset_dir": "home/asakr/FADHC/ITS_split",
+    "meta_data_path": "home/asakr/FADHC/Data/ITS/metadata.csv",
+    "metadata_path_train": "home/asakr/FADHC/Data/ots_metadata_train_list.csv",
+    "metadata_path_val": "home/asakr/FADHC/Data/ots_metadata_val_list.csv"
+}

@@ -1,0 +1,16 @@
+*/__pycache__
+logs
+Data
+ITS_split
+output*
+results
+saved_models
+job_submissions
+indoor
+checkpoint
+depth_tiff
+Fade
+Misc
+wandb
+*.ipynb
+depth
