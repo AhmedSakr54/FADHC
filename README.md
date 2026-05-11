@@ -1,6 +1,14 @@
 # Frequency-Adaptive Depth-Haze Consensus with Semantic Priors for Single Image Dehazing
 
 Official implementation of the paper **"Frequency-Adaptive Depth-Haze Consensus with Semantic Priors for Single Image Dehazing"**.
+## Table Of Content
+
+1. [Architecture](#architecture)
+2. [Installation](#1-requirements)
+3. [Training](#3-training)
+4. [Testing](#4-testing--inference)
+5. [Results](#results)
+6. [Acknowledgement](#acknowledgement)
 
 ## Architecture
 
