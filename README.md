@@ -1,9 +1,8 @@
 # Frequency-Adaptive Depth-Haze Consensus with Semantic Priors for Single Image Dehazing
 
 Official implementation of the paper **"Frequency-Adaptive Depth-Haze Consensus with Semantic Priors for Single Image Dehazing"**.
-> **Note:** This repository is an adaptation of the [DCMPNet](https://github.com/zhoushen1/DCMPNet) repository.
 
-## 🏗️ Architecture
+## Architecture
 
 The framework utilizes a dual-branch strategy (Dehazing & Depth Estimation) linked by FADHC blocks and guided by semantic features from a frozen ResNet50 CLIP encoder.
 
@@ -19,7 +18,7 @@ The framework utilizes a dual-branch strategy (Dehazing & Depth Estimation) link
   <img src="imgs/FADHC.png" height="10%" width="40%" alt="FADHC Block">
 </p>
 
-## 🚀 Getting Started
+## Getting Started
 ### 1. Requirements
 This code needs [RA-Depth](https://github.com/hmhemu/RA-Depth) Repo to run 
 ```markdown
@@ -70,7 +69,6 @@ CUDA_VISIBLE_DEVICES=0 python trainer.py \
     --exp indoor \
     --use_freq_loss \
     --use_fadhc \
-    --use_cc_loss \
     --config_path ./configs/indoor/default.json
 
 ```
@@ -98,16 +96,20 @@ CUDA_VISIBLE_DEVICES=0 python test_crop.py \
 
 ```
 
-## 📊 Results
+## Results
 
 
 | Dataset | PSNR ↑ | SSIM ↑ |
 | --- | --- | --- |
-| **SOTS-Indoor** | 42.23 | **0.9978** |
-| **SOTS-Outdoor** | 37.42 | **0.9961** |
-| **O-Haze** | **27.86** | **0.9607** |
-| **Dense-Haze** | **20.83** | **0.7369** |
-| **NH-Haze** | 24.53 | **0.8740** |
+| **SOTS-Indoor** | 42.23 | 0.9978 |
+| **SOTS-Outdoor** | 37.42 | 0.9961 |
+| **O-Haze** | 27.86 | 0.9607 |
+| **Dense-Haze** | 20.83 | 0.7369** |
+| **NH-Haze** | 24.53 | 0.8740 |
 
+## Acknowledgement
 
+This repository relies on the work of
+- [Depth Information Assisted Collaborative Mutual Promotion Network for Single Image Dehazing](https://github.com/zhoushen1/DCMPNet)
+- [RA-Depth: Resolution Adaptive Self-Supervised Monocular Depth Estimation](https://github.com/hmhemu/RA-Depth)
 
