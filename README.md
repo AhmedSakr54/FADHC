@@ -10,8 +10,8 @@ The framework utilizes a dual-branch strategy (Dehazing & Depth Estimation) link
 <p align="center">
   <img src="imgs/Model_Arch.png" width="80%" alt="Model Architecture">
 </p>
-### Key Features:
 
+### Key Features:
 * **FADHC Block:** Synchronizes phase and magnitude in the Fourier domain to ensure geometric consistency between the recovered image and estimated depth.
 * **Semantic Priors:** Leverages the latent space of CLIP to maintain scene context even when structural details are obscured by heavy haze.
 * **Multi-Domain Loss:** Optimized using a combination of Spatial (L1, SSIM), Contrastive (CR), and Frequency-domain losses.
@@ -20,10 +20,14 @@ The framework utilizes a dual-branch strategy (Dehazing & Depth Estimation) link
 </p>
 
 ## 🚀 Getting Started
-
 ### 1. Requirements
-
-* `pip install -r requirements.txt`
+This code needs [RA-Depth](https://github.com/hmhemu/RA-Depth) Repo to run 
+```markdown
+git clone https://github.com/AhmedSakr54/FADHC.git
+cd ./FADHC
+git clone https://github.com/hmhemu/RA-Depth.git
+pip install -r requirements.txt
+```
 
 ### 2. Data
 #### CSV File Specification
